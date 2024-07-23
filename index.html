@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio P3.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/Logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+            
+            
+                <li><a href="#about">About me</a></li>
+                
+                <li><a href="#Projecten">Projecten</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <il class="fas fa-times" onclick="closemenu()"></i></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text"></div>
+        <p>Natin ICT Student</p>
+        <h1>Hallo, ik ben <span>Karioredjo Din-Yusri</span></h1></h1>
+
+
+        
+<div id="about">
+    <div class="container">
+        <div class="row">
+        
+            <div class="about-col-1">
+                <img src="Images/Snap2.png" width="400" height="700" style="margin-top: 50px ;  ;" alt="Description of the Image">
+            </div>
+    
+            <div class="about-col-2">
+                <h1 class="sub-title"><span>About me</span></h1>
+                <br><p>Ik ben Karioredjo Din-Yusri. Ik ben 17 jaar oud en zit op 't Natin.<br> Mijn hobbies zijn voetballen, vissen en gamen. Ik studeer <br> ICT en wens een internet beheerder te worden.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Educatie')">Educatie</p>
+                    <p class="tab-links" onclick="opentab('Programmeertalen')">Programmeertalen</p>
+                
+                
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+
+                    <ul>
+                        <li><span>Installeren van Hard- en Software</span><br>Assembleren van systemen<br>Installeren en configureren van systemen<br>Realiseren van bekabelingsinfrastructuur</li>
+                        <li><span>Onderhouden en beheren van Hard- en Software</span><br>Voorkomen van (ver)storingen<br>Lokaliseren en verhelpen van (ver)storingen</li>
+                        <li><span>Ondersteunen van systeemgebruikers</span><br>Instrueren van gebruikers<br>In behandeling nemen en afhandelen van incidentmeldingen</li>
+                    
+                    
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Educatie">
+
+                    <ul>
+                        <li><span>Educatie</span><br>GLO 2012-2018<br>MULO-B 2018-2023<br>Natin ICT 2023-Heden</li>
+                        
+                    
+                    
+                    </ul>
+                </div>
+
+                
+                
+                <div class="tab-contents" id="Programmeertalen">
+
+                    <ul>
+                        <li>Python<br>HTML<br>CSS<br>Javascript</li>
+
+
+
+                    </ul>
+            
+
+        
+
+                
+            
+
+            
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+
+
+
+    
+</script>
+<div id="Projecten">
+    <div class="Projecten" style="margin-top: 100px;">
+        <h1 class= "sub-title">Projecten</h1>
+    </div>    
+
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/proj 1 test.png">
+                <div class="layer">
+                    <h3>Installeren van Hard-en Software</h3>
+                    <p>Het installeren van Hard-en Software voor bedrijven</p>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="work">
+                <img src="Images/proj2.png">
+                <div class="layer">
+                    <h3>App coderen</h3>
+                    <p>Coderen van applicatie waar je naar muziek kan luisteren</p>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="work">
+                <img src="Images/proj3.png">
+                <div class="layer">
+                    <h3>Crimpen</h3>
+                    <p>Het crimpen van internet kabels voor grote bedrijven</p>
+                    
+                </div>
+            </div>
+        </div>
+            
+        
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-regular fa-envelope"></i> kousbabbel@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +597 8562321</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/babbel.kous.9"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/whyugay4me?t=hb0gGo8XmbY0jvWCLG0hHQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/kayukri/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.snapchat.com/add/kayukri?share_id=eddREnFChzo&locale=en-US"><i class="fa-brands fa-snapchat"></i></a>
+
+                </div>
+
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+
+   </div>
+
+   <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+
+   </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxmXM5L1Qemg5dLmCfNAkQnaqRFA5lRVS1oDEpJv81DwlQDRiiTj4Z0uGNdYgDwLDnf_Q/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Dankuwel!";{
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset();
+            }
+
+        })
+        .catch(error => console.error('Error!', error.message));
+});
+  </script>
+
+
+
+</body>
+</html>
